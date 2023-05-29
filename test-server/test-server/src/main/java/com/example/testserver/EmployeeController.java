@@ -1,6 +1,8 @@
 package com.example.testserver;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
 import java.util.List;
@@ -71,6 +73,7 @@ public class EmployeeController {
     {
         return this.employeesHashMap.remove(id);
     }
+
 
 
 }
